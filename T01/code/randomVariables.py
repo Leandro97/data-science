@@ -14,9 +14,9 @@ def showHistogram(v1, v2):
 	plt.show()
 
 def testNormality(sampleForTesting):
-	test = kstest(sampleForTesting, "norm")  # null hypothesis: sampleForTesting is normally distributed 
+	test = kstest(sampleForTesting, "norm") # null hypothesis: sampleForTesting is normally distributed 
 
-	if test.pvalue < 0.05: #null hypothesis reject
+	if test.pvalue < 0.05: #null hypothesis rejected
 		return "is not normal"
 	else:				   #failed to reject null hypothesis
 		return "is normal"
